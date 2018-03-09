@@ -1,0 +1,41 @@
+.Input-Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Input-Style {
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.Remember-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 8px 0;
+}
+
+.Remember-Inner-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.Btn-Login {
+    width: 100%;
+    height: 40px;
+    background-color: #4680ff;
+    border-color: #4680ff;
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}

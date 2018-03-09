@@ -1,0 +1,10 @@
+.Logo {
+    background-image: url("https://cdn.wallpaper.com/main/171005_wallpaper_applepark_236.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
