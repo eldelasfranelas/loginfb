@@ -22,7 +22,7 @@ const fbStyle = {
 
 
 const Provider = props => {
-    const {google, fb, twitter} = props
+    const {google, fb, twitter,loginFb} = props
 
     return (
         <div className="Provider-List">
@@ -31,14 +31,20 @@ const Provider = props => {
                 <p className="p"><img src={require("../assets/google.png")} className="img" alt=""/> Google</p>
             </button>}
 
+            {/*{fb &&*/}
+            {/*<button className="Provider-Item" style={fbStyle}>*/}
+            {/*<p className="p"><img src={require("../assets/facebook.png")} className="img" alt=""/> Sign In With Facebook</p>*/}
+            {/*</button>}*/}
             {fb &&
-            <button className="Provider-Item" style={fbStyle}>
-                <p className="p"><img src={require("../assets/facebook.png")} className="img" alt=""/> Sign In With Facebook</p>
-            </button>}
+
+            <div className="fb-login-button" data-size="medium" data-auto-logout-link="true"
+                 data-onlogin={loginFb()}></div>
+            }
 
             {twitter &&
             <button className="Provider-Item" style={twStyle}>
-                <p className="p"><img src={require("../assets/twitter.png")} className="img" alt=""/> Sign In With Twitter</p>
+                <p className="p"><img src={require("../assets/twitter.png")} className="img" alt=""/> Sign In With
+                    Twitter</p>
             </button>}
         </div>
     )
